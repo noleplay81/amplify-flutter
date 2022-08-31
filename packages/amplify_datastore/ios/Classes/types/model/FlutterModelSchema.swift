@@ -80,9 +80,9 @@ struct FlutterModelSchema {
         // 2. The model doesn't have a explicit id field
         // 3. Model generated prior to custom primary key feature
         // Add the default id field as the primary key
-        if (primaryKeyFieldKeys.isEmpty && isModelType) {
-            primaryKeyFieldKeys += ["id"]
-        }
+//         if (primaryKeyFieldKeys.isEmpty && isModelType) {
+//             primaryKeyFieldKeys += ["id"]
+//         }
     }
 
     public func convertToNativeModelSchema(customTypeSchemasRegistry: FlutterSchemaRegistry) throws -> ModelSchema {
